@@ -1,132 +1,60 @@
 # Ai-tendify: AI-Powered Attendance Management System
 
-A modern, automated, and contactless attendance system using **Facial Recognition**, built with **React.js**, **Django REST Framework**, **MySQL**, and **Deep Learning Models (ResNet-34)**.
+A modern, automated, and contactless attendance system using **Facial Recognition**, built with **React.js**, **Django REST Framework**, **MySQL**, and **Deep Learning (ResNet-34)**.
 
-## Table of Contents
-- Overview
-- Features
-- Tech Stack
-- System Architecture
-- Facial Recognition Pipeline
-- Database Design
-- Modules
-- Installation
-- How Attendance Automation Works
-- Results
-- Future Enhancements
-- Contributors
+## 📌 Overview
+Ai-tendify automates student attendance using facial recognition from classroom images. It includes dashboards for Students, Teachers, HODs, and Admins, along with analytics and a Django Jazmin CMS backend.
 
-## Overview
-Ai-tendify is an AI-powered attendance system that automates manual roll calls using facial recognition. It identifies students from uploaded classroom images and marks attendance instantly. The system includes dashboards for Students, Teachers, HODs, and Admins, along with real-time analytics.
+## ⭐ Features
+- AI-based contactless attendance  
+- Upload classroom images → Automatic recognition  
+- Real-time analytics with Recharts  
+- Multi-role dashboards  
+- Manual verification  
+- DRF-secured APIs  
+- Export reports (CSV / PDF)
 
-## Features
-- AI-based contactless attendance
-- Upload images for automatic recognition
-- Real-time analytics using Recharts.js
-- Separate dashboards for all user roles
-- Manual verification options
-- Secure authentication with DRF
-- Downloadable attendance reports (CSV / PDF)
+## 🛠️ Tech Stack
+**Frontend:** React.js, Tailwind CSS, Material-UI, Recharts  
+**Backend:** Django, Django REST Framework, Django Jazmin  
+**AI:** face_recognition (dlib), ResNet-34, HOG + SVM  
+**Database:** MySQL  
 
-## Tech Stack
-**Frontend**
-- React.js
-- Tailwind CSS
-- Material-UI
-- Recharts.js
-- React-Toastify
+---
 
-**Backend**
-- Django
-- Django REST Framework
-- Django Jazmin Admin
-- face_recognition (dlib)
+# 📸 Project Preview
 
-**Database**
-- MySQL
+## 🌐 Landing Pages
+![Landing 1](ProjectFlowImages/1_LandingPage_1.png)
+![Landing 2](ProjectFlowImages/2_LandingPage_2.png)
+![Landing 3](ProjectFlowImages/3_LandingPage_3.png)
 
-**AI Model**
-- ResNet-34 CNN
-- HOG + SVM
+## 👨‍🏫 Teacher Module
+![Teacher Login](ProjectFlowImages/4_Teacher_LoginPage.png)
+![Teacher Dashboard](ProjectFlowImages/5_Teacher_Dashboard1_AllClassesAttendanceSummary.png)
+![Upload Image](ProjectFlowImages/6_Teacher_MarkingAttendance_UploadingImage_and_ImageProcessing.png)
+![Processed Attendance](ProjectFlowImages/7_Teacher_MarkingAttendance_ImageProcessedAndAttendanceMarkedAutomatically.png)
+![Class Table](ProjectFlowImages/8_Teacher_ViewingAttendanceDataInTabularFormatPerClass.png)
+![Weekly Sessions](ProjectFlowImages/9_Teacher_Dashboard2_ViewingAllSessionAttendanceAcrossTheWeek.png)
+![Trends](ProjectFlowImages/10_Teacher_Dashboard3_ViewingSessionForThisWeeksAttendanceTrends.png)
 
-## System Architecture
-Users → React.js Frontend → Django REST API → AI Attendance Service → MySQL Database → Temporary Image Storage
+## 🎓 Student Module
+![Student Login](ProjectFlowImages/11_Student_LoginPage.png)
+![Student Dashboard](ProjectFlowImages/12_Student_Dashboard_CompleteAttendanceSummary.png)
+![Class Summary](ProjectFlowImages/13_Student_Dashboard_AttendanceSummaryPerClass.png)
+![Bar Graph](ProjectFlowImages/14_Student_Dashboard_AttendanceAnalytics_BarGraph.png)
+![Pie Chart](ProjectFlowImages/15_Student_Dashboard_AttendanceAnalytics_PieChart.png.png)
+![Line Graph](ProjectFlowImages/16_Student_Dashboard_AttendanceAnalytics_LineGraph.png.png)
 
-## Facial Recognition Pipeline
-1. Image Upload
-2. Face Detection (HOG + SVM)
-3. Face Encoding (128-D embeddings)
-4. Face Matching (Euclidean distance)
-5. Auto attendance marking
+## 🏛️ HOD Module
+![HOD Login](ProjectFlowImages/17_HOD_LoginPage.png)
+![Branch Overview](ProjectFlowImages/18_HOD_Dashboard1_Overall_BranchData.png)
+![Teacher-Class Overview](ProjectFlowImages/19_HOD_Dashboard2_AllBranchTeachersClassAttendanceData.png)
+![Filter 1](ProjectFlowImages/20_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts1.png)
+![Filter 2](ProjectFlowImages/21_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts2.png)
+![Filter 3](ProjectFlowImages/22_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts3.png)
 
-## Database Design
-Includes tables for Student, Teacher, Subject, Department, Attendance, FaceEncodings, SessionDetails.
+## 🛠️ Admin CMS
+![Admin Jazmin](ProjectFlowImages/23_AdminPage_Django_Jazmin)
 
-## Modules
-
-### Teacher
-- Upload images for attendance
-- Manual attendance correction
-- Download registers
-
-### Student
-- View attendance reports
-- Download records
-
-### HOD
-- Department-wide analytics
-- Teacher/class performance
-
-### Admin
-- CMS with Django Jazmin
-- Manage database entries
-
-## Installation
-
-### Clone Repo
-```
-git clone https://github.com/yourusername/ai-tendify.git
-```
-
-### Backend Setup
-```
-cd backend
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-```
-
-### Frontend Setup
-```
-cd frontend
-npm install
-npm start
-```
-
-### Environment Variables
-```
-DATABASE_HOST=
-DATABASE_USER=
-DATABASE_PASSWORD=
-SECRET_KEY=
-REACT_APP_API_URL=
-```
-
-## How Attendance Automation Works
-The teacher uploads an image → AI processes faces → matches embeddings → stores attendance → updates analytics.
-
-## Results
-- ~90% recognition accuracy
-- 90% faster attendance process
-- Works under varied lighting & large classrooms
-
-## Future Enhancements
-- Live camera detection
-- Mobile version
-- ERP integration
-- Auto defaulter lists
-
-## Contributors
-Your Name  
-BE in Computer Science  
-JSSATE, Bengaluru
+---
