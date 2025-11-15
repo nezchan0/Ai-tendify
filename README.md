@@ -1,4 +1,4 @@
-# Ai-tendify: AI-Powered Attendance Management System
+# 📝 Ai-tendify: AI-Powered Attendance Management System
 
 Ai-tendify is an AI-driven, contactless attendance management system that uses **facial recognition** to automate attendance marking within seconds. Built using **React.js**, **Django REST Framework**, **MySQL**, and **Deep Learning (ResNet-34)**, the system offers dedicated dashboards for Students, Teachers, HODs, and Admins with real-time analytics and a CMS panel.
 
@@ -25,30 +25,14 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 
 ## 🛠️ Tech Stack
 
-### **Frontend**
-- React.js  
-- Vite  
-- Material-UI  
-- Tailwind CSS  
-- Recharts.js  
-- React Hook Form  
-- React-Toastify  
+| Category | Tools & Technologies |
+|---------|----------------------|
+| **🌐 Frontend** | ⚛️ React.js · ⚡ Vite · 🎨 Material-UI · 💨 Tailwind CSS · 📊 Recharts.js · 🪝 React Hook Form · 🔔 React-Toastify |
+| **🖥️ Backend** | 🐍 Django · 🔌 Django REST Framework · 🧩 Django Jazmin Admin (CMS) · 🔐 CORS Headers · 🛡️ JWT / Token Auth |
+| **🤖 AI & Image Processing** | 👁️ face_recognition (dlib) · 🧭 HOG + SVM Detection · 🧠 ResNet-34 (Deep CNN Encodings) |
+| **🗄️ Database** | 🛢️ MySQL · 🔗 Django ORM |
 
-### **Backend**
-- Django  
-- Django REST Framework  
-- Django Jazmin Admin (CMS)  
-- CORS Headers  
-- JWT / Token Auth  
 
-### **AI & Image Processing**
-- face_recognition (dlib)  
-- HOG + SVM face detection  
-- Deep CNN (ResNet-34) face encoding  
-
-### **Database**
-- MySQL  
-- Django ORM  
 
 ---
 
