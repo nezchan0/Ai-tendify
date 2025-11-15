@@ -19,7 +19,7 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 ### Why Image-Based Instead of Video-Based?
 - **Videos require continuous processing**, high GPU/CPU load, and storage.  
 - **Images are lightweight**, fast to process, easy to upload, and achieve high accuracy with minimal resources.  
-- A single classroom image is enough to detect 50+ faces with optimized processing.
+- For a single classroom 3-4 image covering the whole classroom is enough to detect 50+ faces with optimized processing.
 
 ## 🛠️ Tech Stack
 
@@ -91,13 +91,13 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 
 ## 1️⃣ Clone the Repository
 ```bash
-git clone <your_repo_link>
-cd <project_folder>
+git clone https://github.com/nezchan0/Ai-tendify.git
+cd Ai-tendify
 ```
 
 # 🖥️ Frontend Setup (React.js)
 ```bash
-cd frontend
+cd Frontend/myreactapp
 npm install
 npm run dev
 ```
@@ -105,8 +105,9 @@ npm run dev
 # 🐍 Backend Setup (Django)
 ### 1. Activate Virtual Environment
 ```bash
-cd backend
-python myenv
+cd Backend
+python -m venv myenv
+source myenv/bin/activate
 ```
 
 ### 2. Install Dependencies
@@ -116,6 +117,7 @@ pip install -r requirements.txt
 
 ### 3. Run Migrations
 ```bash
+cd Project
 python manage.py makemigrations
 python manage.py migrate
 ```
@@ -141,6 +143,7 @@ python Util_DeleteAllData.py
 ```
 
 # 🧩 Database Schema
+The system uses a normalized MySQL schema comprising 14 core tables that manage academic structure (Branch, Classes, Subjects), user roles (Students, Teachers, Users), scheduling (Session, TimeSlots, TimeTables), and Attendance logs. This design ensures referential integrity and optimized queries for analytics, dashboards, and automation pipelines.
 ![Database_Schema](ProjectFlowImages/DataBaseSchema_Aitendify.png)
 
 # 🏗️ System Architecture
@@ -149,11 +152,46 @@ python Util_DeleteAllData.py
 # 🔄 Data Flow Diagram
 ![DataFlowDiagram](ProjectFlowImages/DataFlowDiagram_AiTendify.png)
 
-# 📸 Project Preview
-(Images retained as described—same as your original README)
+---
 
+# 📸 Project Preview
+
+## 🌐 Landing Pages
+![Landing 1](ProjectFlowImages/1_LandingPage_1.png)
+![Landing 2](ProjectFlowImages/2_LandingPage_2.png)
+![Landing 3](ProjectFlowImages/3_LandingPage_3.png)
+
+## 👨‍🏫 Teacher Module
+![Teacher Login](ProjectFlowImages/4_Teacher_LoginPage.png)
+![Teacher Dashboard](ProjectFlowImages/5_Teacher_Dashboard1_AllClassesAttendanceSummary.png)
+![Upload Image](ProjectFlowImages/6_Teacher_MarkingAttendance_UploadingImage_and_ImageProcessing.png)
+![Processed Attendance](ProjectFlowImages/7_Teacher_MarkingAttendance_ImageProcessedAndAttendanceMarkedAutomatically.png)
+![Class Table](ProjectFlowImages/8_Teacher_ViewingAttendanceDataInTabularFormatPerClass.png)
+![Weekly Sessions](ProjectFlowImages/9_Teacher_Dashboard2_ViewingAllSessionAttendanceAcrossTheWeek.png)
+![Trends](ProjectFlowImages/10_Teacher_Dashboard3_ViewingSessionForThisWeeksAttendanceTrends.png)
+
+## 🎓 Student Module
+![Student Login](ProjectFlowImages/11_Student_LoginPage.png)
+![Student Dashboard](ProjectFlowImages/12_Student_Dashboard_CompleteAttendanceSummary.png)
+![Class Summary](ProjectFlowImages/13_Student_Dashboard_AttendanceSummaryPerClass.png)
+![Bar Graph](ProjectFlowImages/14_Student_Dashboard_AttendanceAnalytics_BarGraph.png)
+![Pie Chart](ProjectFlowImages/15_Student_Dashboard_AttendanceAnalytics_PieChart.png.png)
+![Line Graph](ProjectFlowImages/16_Student_Dashboard_AttendanceAnalytics_LineGraph.png.png)
+
+## 🏛️ HOD Module
+![HOD Login](ProjectFlowImages/17_HOD_LoginPage.png)
+![Branch Overview](ProjectFlowImages/18_HOD_Dashboard1_Overall_BranchData.png)
+![Teacher-Class Overview](ProjectFlowImages/19_HOD_Dashboard2_AllBranchTeachersClassAttendanceData.png)
+![Filter 1](ProjectFlowImages/20_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts1.png)
+![Filter 2](ProjectFlowImages/21_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts2.png)
+![Filter 3](ProjectFlowImages/22_HOD_Dashboard3_Filter_Semester_Teacher_ClassID_And_AnalyticsCharts3.png)
+
+## 🛠️ Admin CMS
+![Admin Jazmin](ProjectFlowImages/23_AdminPage_Django_Jazmin)
+
+
+---
 # 📄 License
 MIT License
 
-# 👤 Author
-**Alok Maurya**
+
