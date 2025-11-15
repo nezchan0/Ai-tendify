@@ -133,7 +133,7 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-# 📥 Import Dummy Data (AI-Generated)
+# 📥 Import Dummy Data
 ```bash
 python Util_ImportDummyData.py
 ```
