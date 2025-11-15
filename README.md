@@ -20,6 +20,21 @@ Ai-tendify automates student attendance using facial recognition from classroom 
 **AI:** face_recognition (dlib), ResNet-34, HOG + SVM  
 **Database:** MySQL  
 
+
+# Database Schema
+The system uses a normalized MySQL schema comprising 14 core tables that manage academic structure (Branch, Classes, Subjects), user roles (Students, Teachers, Users), scheduling (Session, TimeSlots, TimeTables), and attendance logs. This design ensures referential integrity and optimized queries for analytics, dashboards, and automation pipelines.
+![Database_Schema](ProjectFlowImages/DataBaseSchema_Aitendify.png)
+
+---
+
+# Data Flow Diagram
+![DataFlowDiagram](ProjectFlowImages/DataFlowDiagram_AiTendify.png)
+
+---
+
+# System Architecture
+![SystemArchitecture](ProjectFlowImages/SystemArchitecture_Aitendify.png)
+
 ---
 
 # 📸 Project Preview
