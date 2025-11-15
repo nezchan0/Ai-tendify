@@ -21,6 +21,8 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 - **Images are lightweight**, fast to process, easy to upload, and achieve high accuracy with minimal resources.  
 - For a single classroom 3-4 image covering the whole classroom is enough to detect 50+ faces with optimized processing.
 
+---
+
 ## 🛠️ Tech Stack
 
 ### **Frontend**
@@ -47,6 +49,8 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 ### **Database**
 - MySQL  
 - Django ORM  
+
+---
 
 ## ⭐ Key Features
 
@@ -86,6 +90,8 @@ Ai-tendify reduces this to **5–10 seconds**, ensuring:
 - Recharts-based analytical graphs  
 - Automatic trend detection  
 - Class-wise and department-wise comparisons  
+
+---
 
 # ⚙️ Installation & Setup Guide
 
@@ -142,12 +148,18 @@ Reset DB before reimport:
 python Util_DeleteAllData.py
 ```
 
+---
+
 # 🧩 Database Schema
 The system uses a normalized MySQL schema comprising 14 core tables that manage academic structure (Branch, Classes, Subjects), user roles (Students, Teachers, Users), scheduling (Session, TimeSlots, TimeTables), and Attendance logs. This design ensures referential integrity and optimized queries for analytics, dashboards, and automation pipelines.
 ![Database_Schema](ProjectFlowImages/DataBaseSchema_Aitendify.png)
 
+---
+
 # 🏗️ System Architecture
 ![SystemArchitecture](ProjectFlowImages/SystemArchitecture_Aitendify.png)
+
+---
 
 # 🔄 Data Flow Diagram
 ![DataFlowDiagram](ProjectFlowImages/DataFlowDiagram_AiTendify.png)
@@ -191,7 +203,9 @@ The system uses a normalized MySQL schema comprising 14 core tables that manage 
 
 
 ---
-# 📄 License
-MIT License
+## 📜 License
 
+This project is licensed under the [MIT License](LICENSE) — feel free to use, modify, and distribute it freely, with attribution.
+
+---
 
