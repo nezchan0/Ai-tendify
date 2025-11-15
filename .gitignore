@@ -1,0 +1,45 @@
+# -------------------------
+# Python / Django
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyd
+*.so
+*.egg-info/
+*.log
+
+# Django stuff
+migrations/
+
+# Environment
+myenv/
+.env
+*.env
+.env.*
+
+
+# -------------------------
+# Node / React
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React build
+build/
+dist/
+*.cache
+.cache/
+
+
+# -------------------------
+# OS / Editor / Misc
+# -------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
